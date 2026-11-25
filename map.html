@@ -36,21 +36,18 @@
       function initMap() {
         const mtccLocation = { lat: 41.8364, lng: -87.6274 };
 
-        
         const map = new google.maps.Map(document.getElementById("map"), {
           center: mtccLocation,
           zoom: 16,
           mapTypeControl: true
         });
 
-        
         const marker = new google.maps.Marker({
           position: mtccLocation,
           map: map,
           title: "McCormick Tribune Campus Center (MTCC)"
         });
 
-        
         const infoWindow = new google.maps.InfoWindow({
           content: "<h2>McCormick Tribune Campus Center</h2><p>3201 S State St, Chicago, IL — Illinois Tech Campus Hub</p>"
         });
@@ -61,6 +58,5 @@
       }
     </script>
     <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEVTAIH8rl&callback=initMap"></script>
-    <button type="button" id="questions-btn">Questions</button>
   </body>
 </html>
